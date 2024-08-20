@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
 
 //GUEST
 use App\Http\Controllers\HomeController as GuestHomeController;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
