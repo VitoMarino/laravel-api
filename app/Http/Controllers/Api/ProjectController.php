@@ -65,10 +65,7 @@ class ProjectController extends Controller
         // Con success e l'array è un metodo più corretto di esporre il dato tramite API
         return response()->json([
             'success' => true,
-            'result' => [
-                'id' => $project->id,
-                'name' => $project->name
-            ]
+            'result' => $project
         ]);
     }
 
