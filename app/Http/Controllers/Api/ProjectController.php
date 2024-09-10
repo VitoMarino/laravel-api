@@ -10,6 +10,7 @@ class ProjectController extends Controller
 {
 
     public function index(){
+        // Il nome dopo with va in base alla relazione, ovvero singolare se one to one e plurale se many to many o one to many. La funzione presente nel MODEL
         // Dopo with vanno inseriti i metodi presenti nei modelli connessi al modello principale
         $projects = Project::with('type', 'technologies')->paginate(10); // Lazy loading di 10 projects
         // Con success e l'array è un metodo più corretto di esporre il dato tramite API
